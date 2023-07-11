@@ -1,0 +1,22 @@
+Creación de app
+
+1) Primero creamos la aplicación con el comando 
+
+python manage.py startapp nombre_de_tu_aplicacion
+
+2) Ingresamos a la carpeta raiz de nuestro proyecto en este caso es ecommerce
+    se ingresa a settings.py y buscamos el apartado de INSTALLED_APPS, agregamos nuestras app 
+    (Nombre del nuestra app)
+
+3) Ingresamos a models.py, creamos una clase que represente una categoria
+creamos nuestras categorias, hay que tener en cuentra que esto depende el tipo de app y valores que queremos usar, 
+
+tambien usamos una función 
+def __str__(self):
+return self.(Valor representativo de nuestra clase como nombre y demás)
+tambien debes instalar la libreria pillow
+
+4) Vamos ahi mismo dentro del archivo admin.py y registramos nuestro models 
+importamos nuestra categoria y agregamos el admin.site.register(Nuestra clase)
+
+5) por ultimo hacemos la migración: python manage.py makemigrations
