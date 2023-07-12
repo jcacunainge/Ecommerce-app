@@ -15,8 +15,12 @@ tambien usamos una función
 def __str__(self):
 return self.(Valor representativo de nuestra clase como nombre y demás)
 tambien debes instalar la libreria pillow
-
+winpty python manage.py createsuperuser
 4) Vamos ahi mismo dentro del archivo admin.py y registramos nuestro models 
 importamos nuestra categoria y agregamos el admin.site.register(Nuestra clase)
 
-5) por ultimo hacemos la migración: python manage.py makemigrations
+5) por ultimo hacemos la migración: python manage.py makemigrations y luego python manage.py migrate
+
+6) Hay que tener en cuenta la creación del super usuario para el ingreso a django/admin, me salio error 
+en la terminar de poswesheel asi que la cree en la terminal de git bash 
+
